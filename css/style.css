@@ -1,0 +1,508 @@
+*,
+h1 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader img {
+    width: 100%;
+    height: 100%;
+}
+
+.disppear {
+    animation: vanish 2s forwards;
+}
+
+@keyframes vanish {
+    100% {
+        opacity: 0;
+        visiability: hidden;
+    }
+} */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../image/generic-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 600px;
+    margin-top: 0;
+}
+
+.back {
+    background-color: rgba(0, 0, 0, .5);
+    height: 600px;
+}
+
+.navbar {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.item ul {
+    display: flex;
+}
+
+.item li {
+    list-style: none;
+    margin-right: 35px;
+}
+
+#active {
+    color: red;
+}
+
+.item li a {
+    text-decoration: none;
+    color: white;
+}
+
+.item li a:hover {
+    color: red;
+}
+
+.h-img img {
+    width: 150px;
+}
+
+.fold {
+    text-align: center;
+    color: white;
+    margin: 10%;
+}
+
+.fold h1 {
+    font-size: 40px;
+    animation-name: mbt;
+    animation-duration: 1.5s;
+}
+
+.fold p {
+    line-height: 25px;
+    font-size: 18px;
+    animation-name: mbt;
+    animation-duration: 1.5s;
+}
+
+.fold .btn {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(97, 92, 70, 0.5);
+    color: whitesmoke;
+    width: 130px;
+    margin-top: 20px;
+    transition: all .7s ease;
+}
+
+.fold .btn:hover {
+    background-color: white;
+    color: rgba(26, 24, 21, 0.9);
+}
+
+@media screen and (min-width:500px) and (max-width:1100px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+@keyframes mbt {
+    0% {
+        transform: translatey(-1110px)
+    }
+    ;
+    100% {
+        transform: translatey(0px)
+    }
+    ;
+}
+
+
+/*********************************************************END HAEDER***************************************************************************/
+
+
+/**************************************************************staret feature session **********************************************/
+
+.feature-data {
+    width: 19%;
+    text-align: center;
+    margin: 30px;
+    height: 300px;
+}
+
+#features .container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-icons i {
+    font-size: 50px;
+    color: rgba(97, 92, 70, 0.5);
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.feature-icons h5 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: rgba(97, 92, 70, 0.5);
+    cursor: pointer;
+}
+
+.feature-icons:hover h5,
+.feature-icons:hover i {
+    color: black;
+}
+
+.feature-info p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+@media screen and (max-width:900px) {
+    .feature-data {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .feature-data {
+        width: 100%;
+    }
+}
+
+
+/**************************************************************end feature session **********************************************/
+
+
+/**************************************************************start show session **********************************************/
+
+#sh-temp {
+    background-color: rgba(206, 195, 195, 0.5);
+}
+
+.show-info {
+    text-align: center;
+    margin-bottom: 5%;
+    padding-bottom: 0%;
+}
+
+.show-info h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    padding: 40px 30px 0 0;
+}
+
+.show-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 15px;
+}
+
+.show-pic img {
+    width: 100%;
+    zoom: 1;
+}
+
+.show-back .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    flex-wrap: wrap;
+}
+
+.show-back {
+    background-color: rgb(33, 37, 33);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.back-info h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.back-info p {
+    font-size: 19px;
+    color: white;
+}
+
+.show-back .btn {
+    padding: 20px;
+    border: 1px solid #998675;
+    border-radius: 5px;
+    outline: none;
+    background-color: #998675;
+    color: white;
+    width: 150px;
+    margin-top: 20px;
+    transition: all .7s ease;
+}
+
+@media screen and (max-width:900px) {
+    .back-info h1 {
+        font-size: 20px;
+    }
+    .back-info p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .feature-data {
+        width: 100%;
+    }
+}
+
+
+/************************************************************************END  Show sessions***********************************************************/
+
+
+/************************************************************************start project session***********************************************************/
+
+.project-info {
+    text-align: center;
+    margin: 30px 15px 0px 0px;
+    padding: 20px 20px 0px 0px;
+}
+
+.project-info h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.project-info p {
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(53, 48, 48, 0.5);
+}
+
+.buttons {
+    margin: 30px 30px;
+}
+
+.buttons .btn {
+    padding: 13px;
+    border: 1px solid #998675;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    width: 110px;
+    transition: all .7s ease;
+}
+
+.buttons .btn:hover {
+    background-color: #998675;
+}
+
+
+/*************************************************************************************************************************************************************/
+
+#second-projects .container .back-prpject {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 20px;
+}
+
+.item-project {
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.img-project img {
+    width: 100%;
+    overflow: hidden;
+    transition: all .6s linear;
+}
+
+.img-project img:hover {
+    transform: scale(1.1);
+}
+
+.img-project {
+    position: relative;
+    overflow: hidden;
+}
+
+.item-project .info-project {
+    background-color: whitesmoke;
+    height: 100px;
+    width: 339px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*
+.info-project::before
+{
+    content:" " ;
+ 
+    border: 20px solid transparent;
+    border-bottom: 20px solid black;
+    
+   
+}
+*/
+
+.info-project h4 {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.info-project p {
+    margin-top: 3px;
+    margin-left: 15px;
+    font-size: 16px;
+    color: rgba(53, 48, 48, 0.5);
+}
+
+#second-projects .container .btn {
+    margin-left: 45%;
+    padding: 13px;
+    border: 1px solid #998675;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    width: 110px;
+    transition: all .7s ease;
+}
+
+#second-projects .container .btn:hover {
+    background-color: #998675;
+}
+
+
+/*************************************************************************************************** end second  project session ****************************************/
+
+
+/******************************************************stare iphone session *****************************************************************/
+
+#iphone .container .phone-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+.content-icon1 {
+    margin: 5px;
+}
+
+.content-icon1 i {
+    width: 20px;
+    background-color: rosybrown;
+    border: 1px solid rosybrown;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.content h5 i {
+    width: 100px;
+}
+
+@media screen and (min-width:500px) and (min-width:900px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+
+/****************************************************************************************end iphone session***********************************/
+
+
+/****************************************start icons sessions *************************************/
+
+#icons {
+    background-color: #333;
+}
+
+#icons .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icons-data {
+    width: 23%;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.icon i {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.icons-content h1 {
+    font-size: 40px;
+}
+
+.icons-content p {
+    font-weight: 200;
+    font-size: 20px;
+}
+
+@media screen and (max-width:900px) {
+    .icons-data {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .icons-data {
+        width: 100%;
+    }
+}
